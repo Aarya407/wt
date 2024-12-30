@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MovieInfo>
+	<Info>
+		<MovieNo>1</MovieNo>
+		<MovieTitle>Bad News</MovieTitle>
+		<Actorname>Vicky Kaushal</Actorname>
+		<ReleaseYear>2024</ReleaseYear>
+	</Info>
+	<Info>
+		<MovieNo>2</MovieNo>
+		<MovieTitle>Pushpa 2</MovieTitle>
+		<Actorname>Alliu Arjun</Actorname>
+		<ReleaseYear>2021</ReleaseYear>
+	</Info>
+</MovieInfo>
