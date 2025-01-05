@@ -1,26 +1,22 @@
-<html>
-<body>
 <?php
-	$xml=simplexml_load_file('book.xml');
+$str=<<<XML
+<?xml version="1.0" encoding="UTF-8"?>
+	<BookStore>
+<Books>
+<PHP>
+	<Title>Programming in PHP</Title>
+	<Publication>O'RELLY</Publication>
+</PHP>
+<PHP>
+	<Title>Beginners PHP</Title>
+	<Publication>2000</Publication>
+</PHP>
+</Books>
+</BookStore>
+XML;
+	$fname="bookstore.xml";
+	$fp=fopen($fname,"w");
+	fwrite($fp,$str);
+	fclose($fp);
+	echo"created filename is:".$fname;
 ?>
-<center><b>Book Deatils</b></center>
-<table border=1>
-	<th>Book Category</th>
-	<th>Book Code</th>
-	<th>Book Name</th>
-	<th>Book Author</th>
-	<th>Book Price</th>
-	<th>Book Year</th>
-	
-<?php
-	foreach($xml->books as $a)
-	{
-	echo"<tr><td>".$a['category']."<br>";
-	echo"<td>".$a->book_no."<br>";
-	echo"<td>".$a->book_name."<br>";
-	echo"<td>".$a->author_name."<br>";
-	echo"<td>".$a->price."<br>";
-	echo"<td>".$a->year."<br>";
-	}
-?>
-</table>
