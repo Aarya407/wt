@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Live Name Check</title>
+		
+		<script type = "text/javascript">			
+			function show(str)
+			{
+				xmlhttp = new XMLHttpRequest();
+				
+				xmlhttp.open("GET", "slip24_generateXmlFile.php?q=" + str, true);
+				xmlhttp.send();
+
+				xmlhttp.onreadystatechange = function()
+				{
+					if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+					{
+						document.getElementById("detail").innerHTML = xmlhttp.responseText;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<select onchange = "show(this.value)">
+				<option>SELECT COURSE</option>
+				<option>BCS</option>
+				<option>BSC</option>
+				<option>BCA</option>
+			</select>
+			<div id = "detail"></div>
+		</center>
+	</body>
+</html>

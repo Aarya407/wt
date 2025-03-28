@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		span
+		{
+			font-size : 25px;
+		}
+		table
+		{
+			color : black;
+		}
+	</style>
+	<script type = "text/javascript">
+		function print()
+		{
+			var ob = false;
+			ob = new XMLHttpRequest();
+			
+			ob.open("GET", "slip12_table.php?");
+			ob.send();
+			
+			ob.onreadystatechange = function()
+			{
+				if(ob.readyState == 4 && ob.status == 200)
+				{
+					document.getElementById("i").innerHTML = ob.responseText;
+				}
+			}
+		}
+	</script>
+	</head>
+	<body>
+		<center>
+			<h3>Display Contents Of Contact.dat file</h3>
+			<br/><br/>
+			
+			<input type = "button" value = "Print" onclick = "print()"/>
+			<span id = "i"></span>
+		</center>
+	</body>
+</html>

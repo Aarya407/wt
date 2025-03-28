@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type = "text/javascript">
+			function show()
+			{
+				var digit = 1;
+				var previous = 0;
+				var array = [];
+				var count = document.getElementById("no").value;
+				
+				for(var i = 0; i < count; i++)
+				{
+					if(0 == i)
+						array.push(0);
+					else if(1 == i)
+						array.push(1);
+					else
+					{
+						
+						sum = digit + previous;
+						previous = digit;
+						digit = sum;
+						array.push(sum);
+					}
+				}
+				
+				if(array.length > 0)
+					document.getElementById("output").innerHTML = array.join("<br/>");
+			}
+		</script>
+	</head>
+	<body>
+		Enter No. : <input type = "text" id = "no"><br/><br/>
+		<input type = "button" value = "submit" onclick = "show()"><br/><br/>
+		<div id = "output"></div>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+		<book_no>1</book_no>
+		<book_name>Risen</book_name>
+		<author_name>John</author_name>
+		<price>100 Rs.</price>
+		<year>1990</year>
+	</book>
+	<book>
+		<book_no>2</book_no>
+		<book_name>Receipe</book_name>
+		<author_name>Shef Harpaal</author_name>
+		<price>200 Rs.</price>
+		<year>1999</year>
+	</book>
+	<book>
+		<book_no>3</book_no>
+		<book_name>Life</book_name>
+		<author_name>Dr. Yogendra</author_name>
+		<price>150 Rs.</price>
+		<year>2016</year>
+	</book>
+</books>

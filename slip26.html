@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>employee details</title>
+	<script type="text/javascript">
+		function getEmployeeDetailes(){
+			var tno=document.getElementById("ename").value;
+			if(tno=""){
+				document.getElementById("employeeDetails").innerHTML="";
+				return;
+			}
+			var xhr=XMLHttpRequest();
+			xhr.onreadystatechange=funciton(){
+				if(xhr.readyState===4 && xhr.status===200){
+					document.getElementById("employeeDetails").innerHTML=xhr.responseText;
+				}
+			};
+			xhr.open("GET","slip26.php?tno="+tno,true);
+			xhr.send();
+		}
+	</script>
+</head>
+<body>
+	<h1>select a teacher</h1>
+	<select id="ename" onchange="getTeacherDetails()">
+		<option value="">select a teacher</option>
+		<option value="1">John doe</option>
+		<option value="2">jane smith</option>
+		<option value="3">alice johonson</option>
+	</select>
+	<div id="employeeDetails"></div>
+</body>

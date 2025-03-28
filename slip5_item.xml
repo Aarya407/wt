@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<items>
+	<item>
+		<item-name>Book</item-name>
+		<item-rate>70</item-rate>
+		<item-quantity>200 Pages</item-quantity>
+	</item>
+	<item>
+		<item-name>Pen</item-name>
+		<item-rate>5 Rs.</item-rate>
+		<item-quantity>1</item-quantity>
+	</item>
+	<item>
+		<item-name>Eraser</item-name>
+		<item-rate>5 Rs.</item-rate>
+		<item-quantity>1</item-quantity>
+	</item>
+	<item>
+		<item-name>Pad</item-name>
+		<item-rate>150 Rs</item-rate>
+		<item-quantity>1</item-quantity>
+	</item>
+	<item>
+		<item-name>Bag</item-name>
+		<item-rate>500 Rs.</item-rate>
+		<item-quantity>1</item-quantity>
+	</item>
+
+</items>

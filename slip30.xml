@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bookstore>
+    <Yoga>
+        <Book>
+            <Book_Title>how to do yoga</Book_Title>
+            <Book_Author>ramdev baba</Book_Author>
+            <Book_Price>200</Book_Price>
+        </Book>
+        <Book>
+            <Book_Title>10 tips for better yoga</Book_Title>
+            <Book_Author>xyz</Book_Author>
+            <Book_Price>100</Book_Price>
+        </Book>
+    </Yoga>
+    <Story>
+        <Book>
+            <Book_Title>the boy and the heron</Book_Title>
+            <Book_Author>anyonymous</Book_Author>
+            <Book_Price>200</Book_Price>
+        </Book>
+        <Book>
+            <Book_Title>3Y2D</Book_Title>
+            <Book_Author>kaushik joshi</Book_Author>
+            <Book_Price>150</Book_Price>
+        </Book>
+    </Story>
+    <Technical>
+        <Book>
+            <Book_Title>C programming</Book_Title>
+            <Book_Author>charles babbage</Book_Author>
+            <Book_Price>200</Book_Price>
+        </Book>
+        <Book>
+            <Book_Title>advanced linux</Book_Title>
+            <Book_Author>linus torvaldis</Book_Author>
+            <Book_Price>300</Book_Price>
+        </Book>
+    </Technical>
+</Bookstore>

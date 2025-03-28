@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<MovieInfo>
+	<Movie>
+		<MovieNo>101</MovieNo>
+		<MovieTitle>3 Idiots</MovieTitle>
+		<ActorName>Amir khan</ActorName>
+		<ReleaseYear>2010</ReleaseYear>		
+	</Movie>
+	<Movie>
+		<MovieNo>102</MovieNo>
+		<MovieTitle>Sikandar</MovieTitle>
+		<ActorName>Salman Khan</ActorName>
+		<ReleaseYear>2024</ReleaseYear>		
+	</Movie>
+	<Movie>
+		<MovieNo>103</MovieNo>
+		<MovieTitle>PK</MovieTitle>
+		<ActorName>Amir khan</ActorName>
+		<ReleaseYear>2018</ReleaseYear>		
+	</Movie>
+	<Movie>
+		<MovieNo>104</MovieNo>
+		<MovieTitle>Salaar</MovieTitle>
+		<ActorName>Prabhas</ActorName>
+		<ReleaseYear>2017</ReleaseYear>		
+	</Movie>
+	<Movie>
+		<MovieNo>105</MovieNo>
+		<MovieTitle>Swantatrya Veer Sawarkar</MovieTitle>
+		<ActorName>Randip Hooda</ActorName>
+		<ReleaseYear>2023</ReleaseYear>		
+	</Movie>
+</MovieInfo>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="loginForm">
+        Enter username: <input type="text" id="uname" name="uname" required><br>
+        Enter password: <input type="password" id="pass" name="pass" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="response"></div>
+
+    <script>
+    $(document).ready(function() {
+        $('#loginForm').submit(function(e) {
+            e.preventDefault();
+            
+            $.post(
+                'slip28.php',
+                {
+                    uname: $('#uname').val(),
+                    password: $('#pass').val()
+                },
+                function(response) {
+                    $('#response').html(response);
+                }
+            ).fail(function() {
+                $('#response').html('Error occurred during request');
+            });
+        });
+    });
+    </script>
+</body>
+</html>
